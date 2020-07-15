@@ -8,10 +8,10 @@ class ToolsListView(ListAPIView):
     serializer_class = ToolSerializer
 
 
-
 class ToolsGetUpdateDelete(RetrieveUpdateDestroyAPIView):
     queryset = ToolBox.objects.all()
     serializer_class = ToolSerializer
+
 
 class ToolsCreate(CreateAPIView):
     queryset = ToolBox.objects.all()
