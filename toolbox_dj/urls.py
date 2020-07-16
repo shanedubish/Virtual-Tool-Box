@@ -24,8 +24,3 @@ urlpatterns = [
     path('api/', include('mytools.api.urls')),
     re_path(r"^.*", TemplateView.as_view(template_name='index.html'))
 ]
-
-if not settings.DEBUG:
-    urlpatterns += patterns('',
-        (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
-    )
