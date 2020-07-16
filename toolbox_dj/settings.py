@@ -25,7 +25,7 @@ SECRET_KEY = '_p3z@gug#7c6ec-3i-le!hetn%m#aw)@#44w3h%8(oh7bx3&4y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://virtual-tool-box.herokuapp.com"]
+ALLOWED_HOSTS = ["virtual-tool-box.herokuapp.com"]
 
 
 # Application definition
@@ -124,7 +124,7 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'build/static'),
 )
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
